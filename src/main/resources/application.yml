@@ -1,0 +1,10 @@
+server:
+  port: ${random.int[10000,19999]}
+regCenter:
+  serverList: localhost:2181
+  namespace: elastic-job-lite-springboot
+
+simpleJob:
+  cron: 0/15 * * * * ?
+  shardingTotalCount: 3
+  shardingItemParameters: 0=A,1=B,2=C
